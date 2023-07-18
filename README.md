@@ -32,12 +32,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
 # nextjs13-template
 
-# only yarn work this object use package.json 
-  "engines": {
-    "node": ">=14.0.0",
-    "yarn": ">=1.22.0",
-    "npm": "please-use-yarn"
-  }
+# only yarn work this object use package.json
+
+"engines": {
+"node": ">=14.0.0",
+"yarn": ">=1.22.0",
+"npm": "please-use-yarn"
+}
+
+yarn add -D prettier
+create two file 
+  -- .prettierignore
+        .yarn
+        .next
+        dist
+        node_modules
+  -- .prettierrc
+      {
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "semi": true,
+        "singleQuote": true
+      }
+prettier run first add package json script line
+    "scripts": {
+        "prettier": "prettier --write ."
+     },
+       
 
