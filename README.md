@@ -36,6 +36,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 # nextjs13-template
 
 # only yarn work this object use package.json
+
 ```bash
 "engines": {
 "node": ">=14.0.0",
@@ -43,11 +44,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 "npm": "please-use-yarn"
 }
 ```
+
 ## setup prettier
 
 ```bash
 yarn add -D prettier
-create two file 
+create two file
   -- .prettierignore
         .yarn
         .next
@@ -64,8 +66,9 @@ prettier run first add package json script line
     "scripts": {
         "prettier": "prettier --write ."
      },
-       
+
 ```
+
 yarn add -D husky
 npx husky install
 npx husky add .husky/pre-commit "yarn lint"
